@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button } from "@material-ui/core";
+import React from 'react'
 import { Section, Container } from "./Elements";
 
 
@@ -7,17 +6,16 @@ import { Section, Container } from "./Elements";
 
 
 
-const InfoSectionButton = ({ image, title, desc, buttonText }) => {
+const InfoSection = ({ image, title, desc }) => {
     return (
        <Section image={image}>
             <Container>
                 <h1>{title}</h1>
                 <p>{desc}</p>
-                <Button>{buttonText}</Button>
             </Container>
        </Section>
            
     );
 }
 
-export default InfoSectionButton;
+export default InfoSection;

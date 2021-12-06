@@ -2,6 +2,7 @@ import React from 'react';
 import { SidebarContainer, Icon,  CloseIcon, SidebarWrapper, SidebarLink, SidebarMenu, Icon1, Icon2, Icon3, Icon4, Icon5, Icon6, Logo1 } from "./Elements";
 import logoTelos from "../../images/telos_logo.png";
 import logoBsc from "../../images/bsc_logo.png";
+import { Link } from "react-router-dom";
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
@@ -20,13 +21,13 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="News" onClick={toggle}>
                     <Icon1/>News
                     </SidebarLink>
-                    <SidebarLink to="Team" onClick={toggle}>
+                    <SidebarLink to="/TeamPage" onClick={toggle}>
                     <Icon2/>   Team
                     </SidebarLink>
                     <SidebarLink to="Gaming" onClick={toggle}>
                     <Icon3/>    Gaming
                     </SidebarLink>
-                    <SidebarLink to="Partners" onClick={toggle}>
+                    <SidebarLink to="/PartnersPage" onClick={toggle}>
                     <Icon4/>   Partners
                     </SidebarLink>
                     <SidebarLink to="NFTs" onClick={toggle}>

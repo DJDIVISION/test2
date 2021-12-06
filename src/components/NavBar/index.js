@@ -1,7 +1,8 @@
 import React from 'react';
-import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, Logo } from "./Elements";
+import { Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavbarLink, Logo } from "./Elements";
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from "../../images/undraw_to_the_moon_v-1-mv.svg";
+import logo from "../../images/undraw_to_the_moon_v-1-mv.svg"
+import { Link } from "react-router-dom";
 
 
 const Navbar = ({ toggle }) => {
@@ -15,28 +16,28 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="Telos">Telos</NavLinks>
+                            <NavbarLink to="Telos">Telos</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="BSC">BSC</NavLinks>
+                            <NavbarLink to="BSC">BSC</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="News">News</NavLinks>
+                            <NavbarLink to="News">News</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Team">Team</NavLinks>
+                            <NavbarLink to="/TeamPage">Team</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Gaming">Gaming</NavLinks>
+                            <NavbarLink to="Gaming">Gaming</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="Partners">Partners</NavLinks>
+                            <NavbarLink to="/PartnersPage">Partners</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="NFTs">NFTs</NavLinks>
+                            <NavbarLink to="NFTs">NFTs</NavbarLink>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="SocialMedia">Social Media</NavLinks>
+                            <NavbarLink to="SocialMedia">Social Media</NavbarLink>
                         </NavItem>
                     </NavMenu>
                 </NavBarContainer>

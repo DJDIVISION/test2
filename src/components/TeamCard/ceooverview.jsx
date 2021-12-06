@@ -59,7 +59,7 @@ export function CeoOverview(props){
         </Button>
         <TitleContainer>
             <Title>
-                David
+                David R. Martin
             </Title>
         </TitleContainer>
     </OverviewContainer>

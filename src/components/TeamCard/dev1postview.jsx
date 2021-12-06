@@ -1,16 +1,13 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import FacebookIcon from '@material-ui/icons/Facebook';
+import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { IconButton } from "@material-ui/core";
-import { Button } from "@material-ui/core";
 import Victor from "../../images/secondVictor.png";
 import { CardContext } from "./context";
-import { CardButton } from "./common";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { Link } from "react-router-dom";
 
 const OverviewContainer = styled(motion.div)`
   min-width: 100%;
@@ -61,8 +58,8 @@ const LinkIcon = styled(LinkedInIcon)`
     
 `;
 
-const FaceIcon = styled(FacebookIcon)`
-    color: #3b5998;
+const MailIcon = styled(EmailIcon)`
+    color: #BB001B;
 `;
 
 const TweetIcon = styled(TwitterIcon)`
@@ -98,12 +95,14 @@ export function Dev1Postview(props){
                 </a>
             </IconButton>
             <IconButton>
-                <a href="https://twitter.com/VictorR65153076?t=Ts7bOft0rK9jalAoNWPHWw&s=09" target="_blank">
-                <TweetIcon/>
+                <a href="mailto:bodegaflamenca666@gmail.com">
+                <MailIcon/>
                 </a>
             </IconButton>
             <IconButton>
-                <FaceIcon/>
+                <a href="https://twitter.com/VictorR65153076?t=dSKwzBVgv8gyzUKeAkIJlg&s=09" target="_blank">
+                <TweetIcon/>
+                </a>
             </IconButton>
         </IconContainer>
     </OverviewContainer>

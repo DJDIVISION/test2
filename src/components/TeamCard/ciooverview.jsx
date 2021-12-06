@@ -59,7 +59,7 @@ export function CioOverview(props){
         </Button>
         <TitleContainer>
             <Title>
-                Filip
+                Filip Poverud
             </Title>
         </TitleContainer>
     </OverviewContainer>

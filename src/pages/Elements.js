@@ -64,14 +64,14 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
     color: transparent;
     text-shadow: -1px 1px 0 whitesmoke,
-                          4px 6px 0 black,
+                          1px 1px 0 #000,
                          1px -1px 0 #000,
                         -1px -1px 0 #000;
-    font-size: 72px;
+    font-size: 48px;
     text-align: center;
     backdrop-filter: blur(5px);
-    //margin: 2rem;
-    padding: 25px 20px;
+    margin: 2rem;
+    padding: 20px 15px;
 
     @media screen and (max-width: 760px) {
         font-size: 40px;
@@ -83,17 +83,17 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-    margin-top: 16px;
+    margin-top: 24px;
     color: transparent;
     text-shadow: -1px 1px 0 whitesmoke,
-                          2px 4px 0 #000,
+                          1px 1px 0 #000,
                          1px -1px 0 #000,
                         -1px -1px 0 #000;
-    line-height: 1.2;
-    font-size: 28px;
+    line-height: 1.3;
+    font-size: 24px;
     backdrop-filter: blur(5px);
     margin: 1rem;
-    padding: 25px 10px;
+    padding: 15px 10px;
     text-align: center;
     max-width: 600px;
     

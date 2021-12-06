@@ -1,16 +1,13 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import FacebookIcon from '@material-ui/icons/Facebook';
+import EmailIcon from '@material-ui/icons/Email';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { IconButton } from "@material-ui/core";
-import { Button } from "@material-ui/core";
-import Victor from "../../images/secondVictor.png";
+import David from "../../images/davidHelmet.jpg";
 import { CardContext5 } from "./context";
-import { CardButton } from "./common";
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { Link } from "react-router-dom";
 
 const OverviewContainer = styled(motion.div)`
   min-width: 100%;
@@ -18,7 +15,7 @@ const OverviewContainer = styled(motion.div)`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  background: url(${Victor}) center;
+  background: url(${David}) center;
   background-size: cover;
   
   border-radius: 28px;
@@ -61,8 +58,8 @@ const LinkIcon = styled(LinkedInIcon)`
     
 `;
 
-const FaceIcon = styled(FacebookIcon)`
-    color: #3b5998;
+const MailIcon = styled(EmailIcon)`
+    color: #BB001B;
 `;
 
 const TweetIcon = styled(TwitterIcon)`
@@ -93,17 +90,19 @@ export function CeoPostview(props){
         </TitleContainer>
         <IconContainer>
             <IconButton>
-                <a href="https://www.linkedin.com/in/victor-ramirez-martinez-80759416b" target="_blank">
+                <a href="https://www.linkedin.com/in/dave-martin-893b21111/" target="_blank">
                     <LinkIcon/>
                 </a>
             </IconButton>
             <IconButton>
-                <a href="https://twitter.com/VictorR65153076?t=Ts7bOft0rK9jalAoNWPHWw&s=09" target="_blank">
-                <TweetIcon/>
+                <a href="mailto:david@destinyworld.net">
+                <MailIcon/>
                 </a>
             </IconButton>
             <IconButton>
-                <FaceIcon/>
+                <a href="https://twitter.com/RichardMart26?t=cQlA0b-qhVqtx2YIduEyww&s=09" target="_blank">
+                <TweetIcon/>
+                </a>
             </IconButton>
         </IconContainer>
     </OverviewContainer>
