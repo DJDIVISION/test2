@@ -1,7 +1,7 @@
 import React from "react";
 import { HeroContainer, HeroBack, VideoBack, HeroContent, HeroH1, HeroP } from "./Elements";
 
-//import video2 from "../../videos/video2.mp4";
+import video2 from "../../videos/video3.mp4";
 
 
 

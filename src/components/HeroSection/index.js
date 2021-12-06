@@ -1,6 +1,6 @@
 import React from "react";
 import { HeroContainer, HeroBack, VideoBack, HeroContent, HeroH1, HeroP } from "./Elements";
-//import video from "../../videos/video3.mp4";
+import video from "../../videos/video3.mp4";
 
 
 const HeroSection = () => {
