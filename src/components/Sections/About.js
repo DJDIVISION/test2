@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import rocket from "../../images/rocket_image.png";
-import planet from "../../images/3dplanet.png";
-import hand from "../../images/hand.svg";
 
 const move = keyframes`
 0% { transform: translateY(-5px)         }
