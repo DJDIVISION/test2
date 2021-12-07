@@ -9,6 +9,7 @@ import Picture2 from "../images/rees_logo.jpg";
 import { motion } from "framer-motion";
 import { animationOne, transition } from "../animations";
 import PartnerSmallCards from "../components/PartnersHome/PartnerSmallCards";
+import Rocket2 from "../animations/Rocket2";
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
             <NavBar toggle={toggle}/> 
             <HeroSection />
             <InfoSection image={Picture1} title="DAIR" desc="Discover the token" buttonText="PRESS ME"/>
+            <Rocket2 />
             <PartnerSmallCards />
             <InfoSection image={Picture2} title="REES" desc="Discover the token" buttonText="PRESS ME"/>
             <TeamCards/>

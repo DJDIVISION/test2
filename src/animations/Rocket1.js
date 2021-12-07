@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import rocket from "../../images/rocket_image.png";
+import rocket from "../images/rocket_image.png";
 
 const move = keyframes`
 0% { transform: translateY(-5px)         }
@@ -23,7 +23,7 @@ const Rocket = styled.div`
 
 
 
-const About = () => {
+const Rocket1 = () => {
   return (
     <Rocket>
         <img src={rocket} alt="" width="400" height="400" />
@@ -31,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Rocket1;

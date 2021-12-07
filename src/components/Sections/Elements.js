@@ -2,15 +2,23 @@ import React from 'react';
 import styled from "styled-components";
 
 
+
 export const Section = styled.section`
-    background: url(${({ image }) => image && image}) center;
+    background: url(${({ image }) => image && image});
     background-color: white;
+    background-position: center;
+    
     height: 600px;
     background-repeat: no-repeat;
+    background-size: 300px 300px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-attachment: fixed;
+    background-attachment: inherit;
+    
+    
+
+
 
 
 `;
@@ -29,13 +37,16 @@ export const Container = styled.div`
         margin-left: auto;
         margin-right: auto;
         
-        
     }
 
     h1 {
         font-size: clamp(2rem, 8vw, 4rem);
         color: lightgoldenrodyellow;
         margin-bottom: 15px;
+
+        @media screen and (min-width: 880px) {
+            
+        }
     }
     
     p {

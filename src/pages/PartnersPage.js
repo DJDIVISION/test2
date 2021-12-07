@@ -5,7 +5,7 @@ import HeroSectionPartners from "../components/HeroSection/partners.js";
 import PartCards from "../components/PartnersCards/PartnerCards";
 import { motion } from "framer-motion";
 import { animationThree } from "../animations";
-import About from "../components/Sections/About";
+import Rocket1 from "../animations/Rocket1";
 
 
 const PartnersPage = () => {
@@ -21,7 +21,7 @@ const PartnersPage = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle}/> 
             <HeroSectionPartners />
-            <About />
+            <Rocket1 />
             <PartCards />
         </motion.div>
     );
