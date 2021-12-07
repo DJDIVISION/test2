@@ -11,11 +11,12 @@ function SmallHeading({title, identifier}) {
 
 const SmallHeadingStyled = styled.div`
     h3{
-        background: linear gradient(120deg, whitesmoke, black);
+        background: linear gradient(120deg, darkblue, lightblue);
         background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         display: inline-block;
+        
 
     }
 `;

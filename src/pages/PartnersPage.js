@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 import HeroSectionPartners from "../components/HeroSection/partners.js";
 import PartCards from "../components/PartnersCards/PartnerCards";
 import { motion } from "framer-motion";
-import { animationTwo } from "../animations";
+import { animationThree } from "../animations";
 import About from "../components/Sections/About";
 
 
@@ -17,7 +17,7 @@ const PartnersPage = () => {
     }
 
     return (
-        <motion.div initial="out" animate="in" exit="out" variants={animationTwo}>
+        <motion.div initial="out" animate="end" exit="out" variants={animationThree}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <NavBar toggle={toggle}/> 
             <HeroSectionPartners />
