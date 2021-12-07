@@ -1,107 +1,44 @@
 import React from "react";
 import styled from "styled-components";
-import data from "./data";
-import { Button } from "@material-ui/core";
+import { SectionStyled } from "../Sections/Layouts/InnerLayout";
+import MainTitle from "../Sections/Layouts/MainTitle";
+import GradientCard from "./GradientCard";
+import FortisBack from "../../images/fortisbackground.jpg";
+import FortisLogo from "../../images/fortis_logo.png";
+import TelosLogo from "../../images/telos_logo.png";
+import NftfyLogo from "../../images/nftfy_logo.png";
+import AnchorLogo from "../../images/anchor_logo.png";
+import WombatLogo from "../../images/wombat_logo.png";
+import TstarterLogo from "../../images/tstarter_logo.png";
+import TelosBack from "../../images/telos_background.jfif";
+import NftfyBack from "../../images/nftfy_background.jfif";
+import AnchorBack from "../../images/anchor_background.jfif";
+import TstarterBack from "../../images/tstarter_background.png";
+import WombatBack from "../../images/wombat_background.jfif";
 
 
-
-function PartnersCards() {
+function PartCards () {
     return (
-        <PartnersCardsStyled>
-            {
-                data.map((partner) => {
-                    return (
-                    <div className="partnerscards" key={partner.id}>
-                       <div className="logo">
-                            <img src={ partner.image} alt="" />
-                            <div className="text">
-                                <h4>{partner.name}</h4>
-                            </div>
-                            <div className="text">
-                                <p>{partner.type}</p>
-                            </div>
-                            <div>
-                                <CardButton>LEARN MORE</CardButton>
-                            </div>
-                        </div>
-                    </div>
-                    )
-                })
-            }
-        </PartnersCardsStyled>
+        <PartCardsStyled>
+            <SectionStyled>
+                <div className="title-con">
+                    <MainTitle title={"OUR PARTNERS"} subtitle={"Destiny Airlines relies on many parters from different locations all around the world"} />
+                </div>
+                <div class="gradient-cards-con">
+                   <GradientCard image={FortisBack} logo={FortisLogo} name={"FORTIS"} type={"PARTNER"} desc={" Fortis is a decentralised, open, digital money. This means that everyone can use it and transfer money to anyone they want, without having to worry about arbitrary limitations like borders or censorship’s. You don’t have to trust any person or organization in order to handle our token and platform. You are the person in control."} TelegramLink={"https://t.me/FortisCoin"} WebsiteLink={"http://fortisfinance.io"} TwitterLink={"https://twitter.com/Fortis_Coin?t=A9acSmKjK5uNO3qWbRvtCw&s=09"}/> 
+                   <GradientCard image={TelosBack} logo={TelosLogo} name={"TELOS"} type={"BLOCKCHAIN"} desc={"Telos is the ideal network for real world use across multiple industries – Telos based Tokens NFT’s and Smart Contracts are already used for DeFi, Gaming, Social Media amongst a backdrop of almost unlimited real world use cases. There are over 100 projects already building on Telos."} TelegramLink={"https://t.me/HelloTelos"} WebsiteLink={"https://www.telos.net/"} TwitterLink={"https://twitter.com/HelloTelos?t=alSFFeyYG2ieRPaXidx2NQ&s=09"}/> 
+                   <GradientCard image={NftfyBack} logo={NftfyLogo} name={"NFTFY"} type={"PARTNER"} desc={"Nftfy is a permissionless Decentralized Application (DApp) that fractionalizes Non-Fungible Tokens, generating ERC20-compliant fractions fully backed by the NFTs. Our protocol was designed to solve the main problems in the NFT ecosystem, including the low liquidity, investment risk, and monetization of assets."} TelegramLink={"https://t.me/nftfySec"} WebsiteLink={"https://nftify.network/"} TwitterLink={"https://twitter.com/nftfyofficial?t=ifNczg4JmXHY4M2LsyiRKg&s=09"}/> 
+                   <GradientCard image={AnchorBack} logo={AnchorLogo} name={"ANCHOR"} type={"WALLET"} desc={"Anchor is a security and privacy focused open-source digital wallet for all EOSIO-based networks. Anchor uses modern approaches to ensure the security of your accounts. The use of strong encryption1 , trusted execution environments2 , and integrations with hardware wallets helps keep your private keys as safe as possible."} TelegramLink={"https://t.me/anchorwallet"} WebsiteLink={"https://greymass.com/en/anchor/"} TwitterLink={"https://twitter.com/greymass"}/> 
+                   <GradientCard image={TstarterBack} logo={TstarterLogo} name={"T-STARTER"} type={"LAUNCHPAD"} desc={"At T-Starter we have made it our mission not to allow scam projects on the platform. This vetting process can however add friction to the listing process and discourage projects from using our platform. This is why we have now added an option to list through a community vetting process…"} TelegramLink={"https://t.me/tstarterio"} WebsiteLink={"https://tstarter.io/"} TwitterLink={"https://twitter.com/T_StarterToken?t=rkFJNEL-1bj60ll5Ncn0-A&s=09"}/> 
+                   <GradientCard image={WombatBack} logo={WombatLogo} name={"WOMBAT"} type={"WALLET"} desc={"With Wombat, you can send, receive, and earn various tokens without any technical knowledge. With only a couple of taps, you can operate over 50 assets across multiple networks. Join Womplay to earn extra tokens on top of what you already make in blockchain games."} TelegramLink={"https://t.me/WombatSupport"} WebsiteLink={"https://getwombat.io/"} TwitterLink={"https://twitter.com/adoptwombat?t=IJPlNy_LWyKPI00XrAnrMQ&s=09"}/> 
+                </div>
+            </SectionStyled> 
+        </PartCardsStyled>
     )
 }
 
-const PartnersCardsStyled= styled.div`
-     border-radius: 20px;
-     background: #161F38;
-     transition: all .4s ease-in-out;
-     color: whitesmoke;
-     
-     &:hover{
-             transform: translateY(-10px);
-             
-         }
-
-     .partnerscards{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         
-        
-
-         .logo{
-             display: column;
-             img{
-                 display: flex;
-                 margin-top: 10px;
-                 border-radius: 50%;
-                 margin-bottom: 25px;
-                 object-fit: cover;
-                 border: 2px solid gold;
-                 
-             }
-
-         }
-
-         .text{
-             
-             h4{
-                 font-size:48px;
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-                 margin-bottom: 10px;
-
-             }
-             p{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 24px;
-                margin-bottom: 30px;
-             }
-         }
-     }
+const PartCardsStyled = styled.div`
+    background-color: #161F38;
 `;
 
-const CardButton = styled(Button)`
-&&&{
-  color: gold;
-  border: 1px solid gold;
-  padding: 8px 15px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  &:hover{
-      background-color: gold;
-      color: black;
-      transition: 0.2s all ease-in-out;
-      font-weight: bold;
-  }
-
-
-}  
-    
-`;
-
-export default PartnersCards;
+export default PartCards

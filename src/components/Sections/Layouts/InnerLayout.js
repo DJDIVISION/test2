@@ -7,6 +7,11 @@ const InnerLayout = styled.div`
         justify-items: center;
         padding: 10rem 5rem;
     }
+
+    @media screen and (max-width:660px){
+        justify-items: center;
+        padding: 10rem 5rem;
+    }
     
 `;
 

@@ -6,7 +6,7 @@ import InfoSection from "../components/Sections/InfoSection";
 import Picture1 from "../images/rocket_image.png";
 import { motion } from "framer-motion";
 import { animationTwo } from "../animations";
-import About from "../components/Sections/About"
+import About from "../components/Sections/About";
 
 
 const PartnersPage = () => {
