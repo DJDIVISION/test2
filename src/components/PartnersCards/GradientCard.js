@@ -51,6 +51,7 @@ const GradientCardStyled = styled.div`
     border-radius: 20px;
     font-size: 1rem;
     transition: all .4s ease-in-out;
+    
 
     .g-card{
         margin: 2rem;
@@ -60,6 +61,11 @@ const GradientCardStyled = styled.div`
            border-radius: 20px;
            box-shadow: 0 2px 15px 1px whitesmoke;
            border: 1px solid darkblue;
+           transition: all .4s ease-in-out;
+           &:hover{
+               transform: scale(1.05);
+               box-shadow: 0 2px 15px 1px gold;
+           }
            .image{
                width: 100%;
                position: relative;
@@ -68,7 +74,8 @@ const GradientCardStyled = styled.div`
                   object-fit: fill;
                   height: 200px;
                   border-radius: 10px;
-                  border: 1px solid gold;
+                  border: 1px solid darkgoldenrod;
+                  
                }
 
                .name{
@@ -81,10 +88,10 @@ const GradientCardStyled = styled.div`
                    transform: translateX(-50%);
                    width: 75%;
                    padding: .5rem .5rem;
-                   border: 1px solid gold;
+                   border: 1px solid darkgoldenrod;
                    color: whitesmoke;
                    text-align: center;
-                   font-size: 26px;
+                   font-size: 24px;
                    border-radius: 50px;
                    
                    
@@ -100,9 +107,10 @@ const GradientCardStyled = styled.div`
 
                    .text{
                        margin-left: -15px;
+                       font-size: 22px;
 
                        @media screen and (max-width:880px) {
-                            margin-left: -5px;
+                            margin-left: 10px;
                        }
                    }
                }
@@ -119,10 +127,11 @@ const GradientCardStyled = styled.div`
 
                .desc{
                    color: whitesmoke;
-                   padding: 10px 25px;
+                   padding: 5px 15px;
                    text-align: justify;
                    line-height: 1.3;
                    margin-bottom: 20px;
+                   margin-top: 10px;
                }
 
                .footer{

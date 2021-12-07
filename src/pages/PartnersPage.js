@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import Sidebar from "../components/Sidebar";
 import NavBar from "../components/NavBar";
 import HeroSectionPartners from "../components/HeroSection/partners.js";
-import InfoSection from "../components/Sections/InfoSection";
-import Picture1 from "../images/rocket_image.png";
+import PartCards from "../components/PartnersCards/PartnerCards";
 import { motion } from "framer-motion";
 import { animationTwo } from "../animations";
 import About from "../components/Sections/About";
@@ -23,7 +22,7 @@ const PartnersPage = () => {
             <NavBar toggle={toggle}/> 
             <HeroSectionPartners />
             <About />
-            <InfoSection image={Picture1} title="Partners" desc="Our partners"/>
+            <PartCards />
         </motion.div>
     );
 };
