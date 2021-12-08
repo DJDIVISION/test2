@@ -136,12 +136,12 @@ function DropDownMenu() {
            <CSSTransition in={activeMenu === "partners"} unmountOnExit timeout={500} classNames="menu-secondary">
                <div className="menu">
                     <DropDownItem leftIcon={<ChevronLeftIcon />} goToMenu="main" />
-                    <DropDownItem leftIcon={<MonetizationOnIcon />}><Link to="/PartnersPage">FORTIS</Link></DropDownItem>
-                    <DropDownItem leftIcon={<ViewModuleIcon />}><Link to="/PartnersPage">TELOS</Link></DropDownItem>
-                    <DropDownItem leftIcon={<BrushIcon />}><Link to="/PartnersPage">NFTFY</Link></DropDownItem>
-                    <DropDownItem leftIcon={<AccountBalanceWalletIcon />}><Link to="/PartnersPage">WOMBAT</Link></DropDownItem>
-                    <DropDownItem leftIcon={<AccountBalanceWalletIcon />}><Link to="/PartnersPage">ANCHOR</Link></DropDownItem>
-                    <DropDownItem leftIcon={<RocketIcon />}><Link to="/PartnersPage">T-STARTER</Link></DropDownItem>
+                    <Link to="/PartnersPage"><DropDownItem leftIcon={<MonetizationOnIcon />}>FORTIS</DropDownItem></Link>
+                    <Link to="/PartnersPage"><DropDownItem leftIcon={<ViewModuleIcon />}>TELOS</DropDownItem></Link>
+                    <Link to="/PartnersPage"><DropDownItem leftIcon={<BrushIcon />}>NFTFY</DropDownItem></Link>
+                    <Link to="/PartnersPage"><DropDownItem leftIcon={<AccountBalanceWalletIcon />}>WOMBAT</DropDownItem></Link>
+                    <Link to="/PartnersPage"><DropDownItem leftIcon={<AccountBalanceWalletIcon />}>ANCHOR</DropDownItem></Link>
+                    <Link to="/PartnersPage"><DropDownItem leftIcon={<RocketIcon />}>T-STARTER</DropDownItem></Link>
                 </div>
            </CSSTransition>
 
