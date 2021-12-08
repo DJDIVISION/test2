@@ -25,7 +25,7 @@ const Home = () => {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <NavBar />
             <HeroSection />
-            <InfoSection image={Picture1} title="DAIR" desc="Discover the token" buttonText="PRESS ME"/>
+            {/* <InfoSection image={Picture1} title="DAIR" desc="Discover the token" buttonText="PRESS ME"/> */}
             <Rocket2 />
             <PartnerSmallCards />
             <InfoSection image={Picture2} title="REES" desc="Discover the token" buttonText="PRESS ME"/>
