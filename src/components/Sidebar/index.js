@@ -3,8 +3,18 @@ import { SidebarContainer, Icon,  CloseIcon, SidebarWrapper, SidebarLink, Sideba
 import logoTelos from "../../images/telos_logo.png";
 import logoBsc from "../../images/bsc_logo.png";
 import { Link } from "react-router-dom";
+import "../../index.css";
 
-const Sidebar = ({ isOpen, toggle }) => {
+
+function Navbar2(props) {
+    return (
+        <nav className="navbar2">
+            <ul className="navbar2-nav"> { props.children} </ul>
+        </nav>
+    ) 
+}
+
+/* const Sidebar = ({ isOpen, toggle }) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -40,6 +50,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             </SidebarWrapper>
         </SidebarContainer>
     );
-}
+} */
 
-export default Sidebar;
+export default Navbar2;

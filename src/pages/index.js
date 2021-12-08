@@ -11,6 +11,7 @@ import { animationOne, transition } from "../animations";
 import PartnerSmallCards from "../components/PartnersHome/PartnerSmallCards";
 import Rocket2 from "../animations/Rocket2";
 
+
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Home = () => {
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <NavBar toggle={toggle}/> 
+            <NavBar />
             <HeroSection />
             <InfoSection image={Picture1} title="DAIR" desc="Discover the token" buttonText="PRESS ME"/>
             <Rocket2 />
@@ -30,7 +31,17 @@ const Home = () => {
             <InfoSection image={Picture2} title="REES" desc="Discover the token" buttonText="PRESS ME"/>
             <TeamCards/>
         </motion.div>
+    );
+}
+
+function Menu(props) {
+    return (
+        <nav className="menu">
+            <ul className="menu-nav"> { props.children } </ul>
+        </nav>
     )
 }
+
+
 
 export default Home;

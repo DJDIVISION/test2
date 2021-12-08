@@ -14,7 +14,8 @@ export const Section = styled.section`
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    background-attachment: inherit;
+    background-attachment: scroll;
+
     
     
 
@@ -36,6 +37,18 @@ export const Container = styled.div`
     @media screen and (max-width: 880px) {
         margin-left: auto;
         margin-right: auto;
+        
+        h1{
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            
+        }
         
     }
 
