@@ -8,7 +8,8 @@ import {InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Head
 
 const StyledButton = styled(Button)`
     &&&{
-        
+      border: 1px solid gold;
+      color: gold;  
     }
 `;
 

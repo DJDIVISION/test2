@@ -7,8 +7,8 @@ import Image5 from "../../images/nftSvg.svg";
 export const HomeNews = {
     id: "news",
     lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: "Latest News",
     //headline: "Get access to the latest Destiny World & its associates news",
     description: "Destiny World is one of the most trending ecosystems connecting dApps and Communities. Get to know about us right here",
@@ -16,7 +16,7 @@ export const HomeNews = {
     imgStart: false,
     img: Image1,
     alt: 'Rocket',
-    dark: true,
+    dark: false,
     primary: true,   
     darkText: false
 };
@@ -35,7 +35,7 @@ export const HomePartners = {
     alt: 'Rocket',
     dark: false,
     primary: true,   
-    darkText: false
+    darkText: true
 };
 
 export const HomeTeam = {
@@ -52,12 +52,12 @@ export const HomeTeam = {
     alt: 'Rocket',
     dark: false,
     primary: true,   
-    darkText: false
+    darkText: true
 };
 
 export const HomeGaming = {
     id: "gaming",
-    lightBg: true,
+    lightBg: false,
     lightText: false,
     lightTextDesc: false,
     topLine: "Gaming Zone",

@@ -103,7 +103,7 @@ export const Heading = styled.h1`
     font-size:  10px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? 'black' : 'whitesmoke')};
+    
 
     @media screen and (max-width: 480px) {
         font-size:32px;
@@ -115,7 +115,12 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? 'whitesmoke' : 'black')};
+    color: ${({ darkText }) => (darkText ? 'black' : 'whitesmoke')};
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem;
+        margin-top: -80px;
+    }
 
 `;
 
