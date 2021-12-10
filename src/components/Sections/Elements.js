@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from "styled-components";
 import { Link as LinkS } from "react-scroll";
+import SpaceBack from "../../images/spaceBack1.jfif";
 
 export const Button = styled(LinkS)`
     border-radius: 50px;
@@ -22,29 +23,34 @@ export const Button = styled(LinkS)`
         background: ${({ primary}) => (primary ? '#fff' : '#01BF71')};
     }
 
+    
+
 `;
 
 
 
 export const InfoContainer = styled.div`
    color: #fff;
-   background: ${({lightBg}) => (lightBg ? "white" : "#000000")};
-
+   background: ${({lightBg}) => (lightBg ? "#002F6C" : "black")};
+    height: 750px;
+    
+    
    @media screen and (max-width: 768px) {
-       padding: 100px 0;
+       padding: 60px 0;
    }
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 700px;
     width: 100%;
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 24px;
     justify-content: center;
+    
 `;
 
 export const InfoRow = styled.div`
@@ -84,7 +90,7 @@ const move = keyframes`
 `;
 
 export const TopLine = styled.p`
-    color: gold;
+    //color: gold;
     font-size: 60px;
     line-height: 1.1;
     font-weight: 200;
@@ -95,6 +101,7 @@ export const TopLine = styled.p`
     text-shadow: 5px 5px 2px red;
     margin-bottom: 80px;
     animation: ${move} 2.5s ease infinite;
+    color: ${({ colorText }) => (colorText ? 'navy' : 'gold')};
 `;
 
 export const Heading = styled.h1`
@@ -113,10 +120,12 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-top: -30px;
+    margin-bottom: 50px;
     color: ${({ darkText }) => (darkText ? 'black' : 'whitesmoke')};
-
+    
     @media screen and (max-width: 768px) {
         padding: 2rem;
         margin-top: -80px;
@@ -141,6 +150,11 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     //animation: ${move} 2.5s ease infinite;
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem;
+        margin-top: -100px;
+    }
 `;
 
 

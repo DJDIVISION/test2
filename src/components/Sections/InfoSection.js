@@ -9,12 +9,28 @@ import {InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Head
 const StyledButton = styled(Button)`
     &&&{
       border: 1px solid gold;
-      color: gold;  
+      color: gold;
+      margin-left: 120px;
+      
+
+      @media screen and (max-width: 768px) {
+        
+        margin-top: -20px;
+        display: block;
+        margin-left: auto;
+        margin-right:auto;  
+      }
+
+      &:hover{
+          background-color: gold;
+          font-weight: bold;
+          transform: scale(1.1);
+      }
     }
 `;
 
 
-const InfoSection = ({ lightBg, imgStart, topLine, lightText, darkText, buttonLabel, img, alt, id, headline, description }) => {
+const InfoSection = ({ lightBg, imgStart, topLine, lightText, darkText, buttonLabel, img, alt, id, headline, description, colortext }) => {
     return (
        <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -22,7 +38,7 @@ const InfoSection = ({ lightBg, imgStart, topLine, lightText, darkText, buttonLa
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
+                            <TopLine colorText={colortext}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <StyledButton to="home">{buttonLabel}</StyledButton>

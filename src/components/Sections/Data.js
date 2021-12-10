@@ -1,8 +1,8 @@
-import Image1 from "../../images/svg2.svg";
-import Image2 from "../../images/svg3.svg";
-import Image3 from "../../images/svg1.svg";
-import Image4 from "../../images/gamingSvg.svg";
-import Image5 from "../../images/nftSvg.svg";
+import ImageNews from "../../images/news.png";
+import ImageTeam from "../../images/team.png";
+import ImageNft from "../../images/nftSvg.svg";
+import Image4 from "../../images/gaming.png";
+import ImagePartners from "../../images/partnersSvg.svg";
 
 export const HomeNews = {
     id: "news",
@@ -14,7 +14,7 @@ export const HomeNews = {
     description: "Destiny World is one of the most trending ecosystems connecting dApps and Communities. Get to know about us right here",
     buttonLabel: "Read the news",
     imgStart: false,
-    img: Image1,
+    img: ImageNews,
     alt: 'Rocket',
     dark: false,
     primary: true,   
@@ -31,11 +31,12 @@ export const HomePartners = {
     description: "Destiny World relies on several trustful partners from different locations all around the world",
     buttonLabel: "Meet our Partners",
     imgStart: false,
-    img: Image2,
+    img: ImagePartners,
     alt: 'Rocket',
     dark: false,
     primary: true,   
-    darkText: true
+    darkText: false,
+    colorText: true,
 };
 
 export const HomeTeam = {
@@ -45,14 +46,15 @@ export const HomeTeam = {
     lightTextDesc: false,
     topLine: "Destiny's Team",
     //headline: "Get access to the latest Destiny World & its associates news",
-    description: "These are the people that have made Destony World possible",
+    description: "These are the people that have made Destiny World possible",
     buttonLabel: "Meet the Team",
     imgStart: false,
-    img: Image3,
+    img: ImageTeam,
     alt: 'Rocket',
     dark: false,
     primary: true,   
-    darkText: true
+    darkText: false,
+    colorText: false,
 };
 
 export const HomeGaming = {
@@ -82,7 +84,7 @@ export const HomeNFT = {
     description: "Destiny World is associated with several NFT platforms and artists such as Wayne Sheppard",
     buttonLabel: "Enjoy the Art",
     imgStart: false,
-    img: Image5,
+    img: ImageNft,
     alt: 'Rocket',
     dark: false,
     primary: true,   

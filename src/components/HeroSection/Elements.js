@@ -72,7 +72,8 @@ export const HeroH1 = styled.h1`
     backdrop-filter: blur(5px);
     //margin: 2rem;
     padding: 25px 20px;
-
+    
+    
     @media screen and (max-width: 760px) {
         font-size: 40px;
     }

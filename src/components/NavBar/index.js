@@ -95,7 +95,7 @@ function DropDownMenu() {
        <div className="dropdown">
            <CSSTransition in={activeMenu === "main"} unmountOnExit timeout={500} classNames="menu-primary">
                <div className="menu">
-                    <DropDownItem leftIcon={<NewspaperIcon />} rightIcon={<NavigateNextIcon />} goToMenu="news">News</DropDownItem>
+                    <DropDownItem leftIcon={<NewspaperIcon />} rightIcon={<NavigateNextIcon />} goToMenu="news"><LinkS to="news" smooth={true} duration={500}>News</LinkS></DropDownItem>
                     <DropDownItem leftIcon={<PeopleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="team">Team</DropDownItem>
                     <DropDownItem leftIcon={<CasinoIcon />} rightIcon={<NavigateNextIcon />} goToMenu="gaming">Gaming</DropDownItem>
                     <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon /> }goToMenu="partners">Partners</DropDownItem>
