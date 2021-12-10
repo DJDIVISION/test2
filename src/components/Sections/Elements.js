@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link as LinkS } from "react-scroll";
 
 export const Button = styled(LinkS)`
@@ -28,7 +28,7 @@ export const Button = styled(LinkS)`
 
 export const InfoContainer = styled.div`
    color: #fff;
-   background: ${({lightBg}) => (lightBg ? "#f9f9f9" : "01060")};
+   background: ${({lightBg}) => (lightBg ? "white" : "#000000")};
 
    @media screen and (max-width: 768px) {
        padding: 100px 0;
@@ -76,23 +76,34 @@ export const TextWrapper = styled.div`
     padding-bottom: 60px;
 `;
 
+
+const move = keyframes`
+    0% { transform: scale(1)        }
+    50% { transform: scale(0.9)        }
+    100% { transform: scale(1)         }
+`;
+
 export const TopLine = styled.p`
-    color: black;
-    font-size: 48px;
-    line-height: 16px;
-    font-weight: 700;
+    color: gold;
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 200;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    font-family: "Neonballroom";
+    text-shadow: 5px 5px 2px red;
+    margin-bottom: 80px;
+    animation: ${move} 2.5s ease infinite;
 `;
 
 export const Heading = styled.h1`
-    color: black;
+    
     margin-bottom: 24px;
-    font-size:  48px;
+    font-size:  10px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606')};
+    color: ${({ lightText }) => (lightText ? 'whitesmoke' : 'black')};
 
     @media screen and (max-width: 480px) {
         font-size:32px;
@@ -118,10 +129,13 @@ export const ImgWrap = styled.div`
     height: 100%;
 `;
 
+
+
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    //animation: ${move} 2.5s ease infinite;
 `;
 
 

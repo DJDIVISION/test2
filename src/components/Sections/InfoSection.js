@@ -1,10 +1,16 @@
 import React from 'react';
 import { Button } from "@material-ui/core";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Section, Container } from "./Elements";
 
 import {InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, Column2, ImgWrap, Img, alt} from "./Elements";
 
-
+const StyledButton = styled(Button)`
+    &&&{
+        
+    }
+`;
 
 
 const InfoSection = ({ lightBg, imgStart, topLine, lightText, darkText, buttonLabel, img, alt, id, headline, description }) => {
@@ -18,7 +24,7 @@ const InfoSection = ({ lightBg, imgStart, topLine, lightText, darkText, buttonLa
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
-                            <Button to="home">{buttonLabel}</Button>
+                            <StyledButton to="home">{buttonLabel}</StyledButton>
                         </TextWrapper>
                     </Column1>
                     <Column2>
