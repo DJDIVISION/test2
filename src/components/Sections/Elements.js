@@ -85,7 +85,7 @@ const move = keyframes`
 
 export const TopLine = styled.p`
     color: gold;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1.1;
     font-weight: 200;
     letter-spacing: 1.4px;
@@ -103,7 +103,7 @@ export const Heading = styled.h1`
     font-size:  10px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? 'whitesmoke' : 'black')};
+    color: ${({ lightText }) => (lightText ? 'black' : 'whitesmoke')};
 
     @media screen and (max-width: 480px) {
         font-size:32px;
@@ -115,7 +115,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? '#010606' : 'black')};
+    color: ${({ darkText }) => (darkText ? 'whitesmoke' : 'black')};
 
 `;
 
