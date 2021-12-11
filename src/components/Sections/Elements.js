@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from "styled-components";
 import { Link as LinkS } from "react-scroll";
-import SpaceBack from "../../images/spaceBack1.jfif";
 
 export const Button = styled(LinkS)`
     border-radius: 50px;

@@ -89,7 +89,27 @@ export const SidebarMenu = styled.ul`
 
 `;
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLinkS = styled(LinkS)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-left: -40px;
+    
+
+    &:hover {
+        color: blue;
+        transition: 0.2 ease-in-out;
+    }
+`;
+
+export const SidebarLinkR = styled(LinkR)`
     display: flex;
     align-items: center;
     justify-content: center;

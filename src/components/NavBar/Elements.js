@@ -67,6 +67,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     text-align: center;
@@ -97,4 +98,12 @@ export const NavbarLink = styled(LinkS)`
    &.active {
        border-bottom: 3px solid whitesmoke;
    }
+`;
+
+export const MenuList = styled.ul`
+    display: inline-flex;
+    
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 `;

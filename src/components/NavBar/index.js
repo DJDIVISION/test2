@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
-import { Nav, NavBarContainer, NavLogo, NavMenu, NavItem, NavbarLink, Logo } from "./Elements";
+import { Nav, NavBarContainer, NavLogo, NavMenu, NavItem, NavbarLink, MenuList } from "./Elements";
 import MenuIcon from '@mui/icons-material/Menu';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -25,13 +25,22 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import ArticleIcon from '@mui/icons-material/Article';
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const SmartIcon = styled(MenuIcon)`
      color: gold;
 `;
 
+const ArrowIcon = styled(KeyboardArrowDownIcon)`
+    color: gold;
+    margin-right: 20px;
+`;
 
-const Navbar = ({ toggle }) => {
+
+const Navbar = () => {
+
+    
+
     return (
         <>
             <Nav>
@@ -79,6 +88,12 @@ const Navbar = ({ toggle }) => {
 function DropDownMenu() {
 
     const [activeMenu, setActiveMenu] = useState("main");
+
+    const [isOpen, setIsOpen] = useState(true);
+
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    }
     
 
     function DropDownItem(props) {
@@ -95,14 +110,38 @@ function DropDownMenu() {
        <div className="dropdown">
            <CSSTransition in={activeMenu === "main"} unmountOnExit timeout={500} classNames="menu-primary">
                <div className="menu">
-                    <DropDownItem leftIcon={<NewspaperIcon />} rightIcon={<NavigateNextIcon />} goToMenu="news"><LinkS to="news" smooth={true} duration={500}>News</LinkS></DropDownItem>
-                    <DropDownItem leftIcon={<PeopleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="team">Team</DropDownItem>
-                    <DropDownItem leftIcon={<CasinoIcon />} rightIcon={<NavigateNextIcon />} goToMenu="gaming">Gaming</DropDownItem>
-                    <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon /> }goToMenu="partners">Partners</DropDownItem>
-                    <DropDownItem leftIcon={<BrushIcon />} rightIcon={<NavigateNextIcon />} goToMenu="nft">NFTs</DropDownItem>
-                    <DropDownItem leftIcon={<TwitterIcon />} rightIcon={<NavigateNextIcon />} goToMenu="social">Social Media</DropDownItem>
-                    <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="telos">TELOS</DropDownItem>
-                    <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="bsc">BSC</DropDownItem>
+                   <MenuList>
+                        <LinkS to="news"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<NewspaperIcon />} rightIcon={<NavigateNextIcon />} goToMenu="news">News</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="team"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<PeopleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="team">Team</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="gaming"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<CasinoIcon />} rightIcon={<NavigateNextIcon />} goToMenu="gaming">Gaming</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="partners"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon /> }goToMenu="partners">Partners</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="nft"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<BrushIcon />} rightIcon={<NavigateNextIcon />} goToMenu="nft">NFTs</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="social"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<TwitterIcon />} rightIcon={<NavigateNextIcon />} goToMenu="social">Social Media</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="telos"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="telos">TELOS</DropDownItem>
+                    </MenuList>
+                    <MenuList>
+                        <LinkS to="bsc"><ArrowIcon /></LinkS>
+                        <DropDownItem leftIcon={<SupervisedUserCircleIcon />} rightIcon={<NavigateNextIcon />} goToMenu="bsc">BSC</DropDownItem>
+                    </MenuList>
                 </div>
            </CSSTransition>
 
